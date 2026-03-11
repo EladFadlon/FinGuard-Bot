@@ -1,0 +1,49 @@
+2026-03-11 14:10:16,157 - INFO - User added stock: TSLA
+2026-03-11 14:10:21,487 - INFO - User added stock: AAPL
+2026-03-11 14:32:22,048 - INFO - User added stock: AAPL
+2026-03-11 14:32:29,019 - INFO - User added stock: MSFT
+2026-03-11 14:32:37,670 - INFO - User added stock: TSLA
+2026-03-11 14:40:37,031 - INFO - User added stock: TSLA
+2026-03-11 14:42:08,433 - INFO - User added stock: TSLA
+2026-03-11 14:45:41,548 - INFO - User added stock: TSLA
+2026-03-11 14:47:55,269 - INFO - User added stock: TSLA
+2026-03-11 14:47:56,791 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:48:27,076 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:48:57,374 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:49:27,652 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:49:57,989 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:50:28,271 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:50:57,602 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:51:27,960 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:51:59,436 - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TSKA"}}}
+2026-03-11 14:52:00,176 - ERROR - $TSKA: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-03-11 14:52:00,176 - WARNING - Ticker TSKA returned empty history (might not exist).
+2026-03-11 14:52:03,113 - INFO - User added stock: tsla
+2026-03-11 14:52:07,822 - WARNING - DEVIATION DETECTED: tsla at 399.239990234375
+2026-03-11 14:52:41,425 - WARNING - DEVIATION DETECTED: tsla at 399.239990234375
+2026-03-11 14:54:25,809 - ERROR - $ TSLA: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-03-11 14:54:25,810 - WARNING - Ticker  TSLA returned empty history (might not exist).
+2026-03-11 14:54:32,533 - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 4TSLA"}}}
+2026-03-11 14:54:33,324 - ERROR - $4TSLA: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-03-11 14:54:33,325 - WARNING - Ticker 4tsla returned empty history (might not exist).
+2026-03-11 14:54:37,011 - INFO - User added stock: tsla
+2026-03-11 14:54:44,979 - WARNING - DEVIATION DETECTED: tsla at 399.239990234375
+2026-03-11 14:55:15,700 - WARNING - DEVIATION DETECTED: tsla at 399.239990234375
+2026-03-11 14:56:21,115 - INFO - User added stock: TSLA
+2026-03-11 14:56:25,825 - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ASDCS"}}}
+2026-03-11 14:56:26,623 - ERROR - $ASDCS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-03-11 14:56:26,624 - WARNING - Ticker ASDCS returned empty history (might not exist).
+2026-03-11 14:56:30,529 - INFO - User added stock: AAPL
+2026-03-11 14:56:35,308 - ERROR - $ASLC: possibly delisted; no price data found  (period=1d)
+2026-03-11 14:56:35,309 - WARNING - Ticker ASLC returned empty history (might not exist).
+2026-03-11 14:56:42,169 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:56:43,128 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656
+2026-03-11 14:57:13,830 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:57:14,549 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656
+2026-03-11 14:57:45,207 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:57:45,821 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656
+2026-03-11 14:58:16,550 - WARNING - DEVIATION DETECTED: TSLA at 399.239990234375
+2026-03-11 14:58:17,196 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656
+2026-03-11 14:58:41,934 - INFO - User added stock: AAPL
+2026-03-11 14:58:47,145 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656
+2026-03-11 14:59:18,028 - WARNING - DEVIATION DETECTED: AAPL at 260.8299865722656

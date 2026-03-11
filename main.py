@@ -8,6 +8,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+print(f"Token found: {os.getenv('TELEGRAM_TOKEN') is not None}")
 
 logging.basicConfig(
     filename='fin_bot.log',
@@ -81,7 +82,7 @@ if __name__ == "__main__":
                 print(f"{new_stock} Is Already in WatchList")
             else:
                 while new_stock != 'Q' and not is_valid_ticker(new_stock):
-                    new_stock = input(f"{new_stock} Not Found.. Enter New Ticker (Or 'Q' to Cancel): ")
+                    new_stock = input(f"{new_stock} Not Found.. Enter New Ticker (Or 'Q' to Cancel): ").upper()
                 if new_stock != 'Q':
                     watched_stocks.append(new_stock)
                     print(f"{new_stock} Added Successfully! ")
@@ -114,20 +115,22 @@ if __name__ == "__main__":
                         current_price = ticker.fast_info['last_price']
                         avg = averages_cache[stock]
 
-                        print(f"Checking {stock}... | Price: {current_price:.2f} | Avg: {avg:.2f}")
-
-                        if current_price > avg * 1.05 or current_price < avg * 0.95 :
+                        print(f"Checking {stock}... | Price: {current_price:.4f} | Avg: {avg:.4f}")
+                        diff = ((current_price / avg) - 1) * 100
+                        icon = "📈" if diff > 0 else "📉"
+                        status = "Movement" if diff > 0 else "Drop"
+                        if current_price > avg * 1.01 or current_price < avg * 0.99 :
                             logging.warning(f"DEVIATION DETECTED: {stock} at {current_price}")
                             alert_msg = f"""
-                            🚀 *Stock Movement Alert* 🚀
-                            ---
-                            *Stock:* {stock}
-                            *Current Price:* `${current_price:.2f}`
-                            *5-Day Average:* `${avg:.2f}`
-                            *Change:* `+{((current_price/avg)*100)-100:.2f}%` 📈
-                            ---
-                            _Check your portfolio!_
-                            """
+🚀 *Stock {status} Alert* {icon}
+---
+*Stock:* {stock}
+*Current Price:* `${current_price:.2f}`
+*5-Day Average:* `${avg:.2f}`
+*Change:* `{diff:.2f}%`
+---
+_Check your portfolio!_
+"""
                             print(alert_msg)
                             send_telegram_message(alert_msg)
                     print(f"\n--- Check completed. Next check in 180 seconds... ---")
