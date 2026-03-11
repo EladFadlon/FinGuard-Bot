@@ -1,6 +1,6 @@
 # FinGuard-Bot 📈 🚨
 
-A robust, real-time stock monitoring system built with Python. This bot tracks stock price fluctuations using live data from the Yahoo Finance API and sends instant alerts via Telegram when significant deviations are detected.
+FinGuard-Bot is a professional-grade monitoring tool designed to track stock market volatility in real-time. Built by a Computer Science student at Ben-Gurion University, the project integrates live financial data with automated mobile notifications. It emphasizes software engineering best practices, including defensive programming, efficient data caching (Memoization), and secure credential management
 
 ## 🚀 Features
 - **Live Monitoring:** Fetches real-time price data using `yfinance`.
